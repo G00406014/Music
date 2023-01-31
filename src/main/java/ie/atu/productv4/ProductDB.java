@@ -10,34 +10,52 @@ public class ProductDB {
 
         Product p = null;
 
-        if (productCode.equalsIgnoreCase("java")
-                || productCode.equalsIgnoreCase("jsp")
-                || productCode.equalsIgnoreCase("mysql")) {
-            Book b = new Book();
-            if (productCode.equalsIgnoreCase("java")) {
-                b.setCode(productCode);
-                b.setDescription("GMIT Java Programming");
-                b.setPrice(57.50);
-                b.setAuthor("Joe Brown");
-            } else if (productCode.equalsIgnoreCase("jsp")) {
-                b.setCode(productCode);
-                b.setDescription("Java Servlets and JSP");
-                b.setPrice(57.50);
-                b.setAuthor("Mike Urban");
-            } else if (productCode.equalsIgnoreCase("mysql")) {
-                b.setCode(productCode);
-                b.setDescription("Lennon's MySQL");
-                b.setPrice(54.50);
-                b.setAuthor("Joe Mura");
-            }
-            p = b; // set Product object equal to the Book object
-        } else if (productCode.equalsIgnoreCase("netbeans")) {
-            Software s = new Software();
-            s.setCode("netbeans");
-            s.setDescription("NetBeans");
-            s.setPrice(0.00);
-            s.setVersion("8.2");
-            p = s; // set Product object equal to the Software object
+        if (productCode.equalsIgnoreCase("java"))
+        {
+            Book myBook = new Book();
+            myBook.setCode(productCode);
+            myBook.setDescription("ATU Java Programming");
+            myBook.setPrice(57.50);
+            myBook.setAuthor("Joe Brown");
+            p = myBook;
+        } else if (productCode.equalsIgnoreCase("jsp")) {
+            Book myBook = new Book();
+            myBook.setCode(productCode);
+            myBook.setDescription("Java Servlets and JSP");
+            myBook.setPrice(57.50);
+            myBook.setAuthor("Mike White");
+            p = myBook;
+        } else if (productCode.equalsIgnoreCase("mysql")) {
+            Book myBook = new Book();
+            myBook.setCode(productCode);
+            myBook.setDescription("Lennon's MySQL");
+            myBook.setPrice(54.50);
+            myBook.setAuthor("Jim Lennon");
+            p = myBook;
+        }
+
+
+        if (productCode.equalsIgnoreCase("studios")) {
+            Software mySoftware = new Software();
+            mySoftware.setCode(productCode);
+            mySoftware.setDescription("Visual Studios");
+            mySoftware.setPrice(57.50);
+            mySoftware.setVersion("Microsoft 1.1");
+            p = mySoftware;
+        } else if (productCode.equalsIgnoreCase("eclipse")) {
+            Software mySoftware = new Software();
+            mySoftware.setCode(productCode);
+            mySoftware.setDescription("Build Java apps");
+            mySoftware.setPrice(57.50);
+            mySoftware.setVersion("Eclipse Neon");
+            p = mySoftware;
+        } else if (productCode.equalsIgnoreCase("oracle")) {
+            Software mySoftware = new Software();
+            mySoftware.setCode(productCode);
+            mySoftware.setDescription("Latest MySQL");
+            mySoftware.setPrice(54.50);
+            mySoftware.setVersion("Oracle 3.0");
+            p = mySoftware;
         }
         return p;
     }

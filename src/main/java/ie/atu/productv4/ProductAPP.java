@@ -1,8 +1,10 @@
 package ie.atu.productv4;
 
+import ie.atu.productv2.Book;
+
 import java.util.Scanner;
 
-public class ProductApp {
+public class ProductAPP {
 
     public static void main(String args[]) {
         // display a welcome message

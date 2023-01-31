@@ -9,8 +9,8 @@ public class Software extends Product {
         version = "";
         count++;
     }
-    
-    
+
+
     public void setVersion(String version) {
         this.version = version;
     }
