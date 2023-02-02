@@ -1,34 +1,34 @@
+
 package ie.atu.productv4;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class music  extends Product {
+public class Tv extends Product {
 
-
-    private String artist;
+    private String manufacture;
     private String code;
     private String description;
-    private String label;
+    private String size;
     private double price;
     protected static int count = 0;
 
-    public music() {
+    public Tv() {
         description = "";
         code = "";
-        artist = "";
+        manufacture = "";
         price = 0.0;
-        label = "";
+        size = "";
         count++;
     }
 
 
-    public void setArtist(String artist) {
-        this.artist = artist;
+    public void setManufacture(String manufacture) {
+        this.manufacture = manufacture;
     }
 
     public String getArtist() {
-        return artist;
+        return manufacture;
     }
 
     public void setCode(String code) {
@@ -55,12 +55,12 @@ public class music  extends Product {
         return price;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setSize(String size) {
+        this.size = size;
     }
 
-    public String getLabel() {
-        return label;
+    public String getSize() {
+        return size;
     }
 
     public String getPriceFormatted() {
@@ -70,7 +70,7 @@ public class music  extends Product {
     }
 
     public String toString() {
-        return description + " by " + artist;
+        return description + " by " + manufacture;
     }
 
     public static int getCount() {
