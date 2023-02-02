@@ -10,8 +10,7 @@ public class ProductDB {
 
         Product p = null;
 
-        if (productCode.equalsIgnoreCase("java"))
-        {
+        if (productCode.equalsIgnoreCase("java")) {
             Book myBook = new Book();
             myBook.setCode(productCode);
             myBook.setDescription("ATU Java Programming");
@@ -57,6 +56,28 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             p = mySoftware;
         }
+        if (productCode.equalsIgnoreCase("red")) {
+            Tv myTv = new Tv();
+            myTv.setCode(productCode);
+            myTv.setDescription("Visual Studios");
+            myTv.setPrice(57.50);
+            myTv.setSize("Microsoft 1.1");
+            p = myTv;
+        }
+        if (productCode.equalsIgnoreCase("blue")) {
+            music mymusic = new music();
+            mymusic.setCode(productCode);
+            mymusic.setDescription("Visual Studios");
+            mymusic.setPrice(57.50);
+            mymusic.setArtist("Microsoft 1.1");
+            p = mymusic;
+
+            return p;
+        }
         return p;
     }
 }
+
+
+
+
